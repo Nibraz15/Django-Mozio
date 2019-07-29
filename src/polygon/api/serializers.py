@@ -4,7 +4,6 @@ from polygon.models import Polygons
 
 
 class PolygonsSerializer(serializers.ModelSerializer):
-    
     class Meta:
         model = Polygons
         fields = [
