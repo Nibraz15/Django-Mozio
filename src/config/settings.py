@@ -25,7 +25,7 @@ SECRET_KEY = '^7ysjwt=xk+3me*rp8-*eb^1!s0!6*krb^yy50f^@2n22j%qkv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [*]
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'api',
-    'django.contrib.gis',
+    
     'rest_framework',
     'rest_framework.authtoken',
     'rest_auth',
@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Mozoi',                      
         'USER': 'postgres',
         'PASSWORD': 'Ahamed@7432',

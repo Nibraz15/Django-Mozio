@@ -1,10 +1,10 @@
 import json
-from django.http import HttpResponse
+
 from rest_framework import generics
 from polygon.models import Polygons
 from .serializers import PolygonsSerializer 
 from .permissions import IsOwnerOrReadOnly 
-from django.contrib.gis.geos import Point, Polygon
+
 class PolyonssRudView(generics.RetrieveUpdateDestroyAPIView):
     
     lookup_field = 'pk'

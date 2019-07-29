@@ -1,8 +1,6 @@
 from django.conf import settings
 from djgeojson.fields import PolygonField
 from django.urls import reverse
-from django.contrib.gis.geos import Point
-from django.contrib.gis.geos import GEOSGeometry
 from rest_framework.reverse import reverse as api_reverse
 from django.db import models
 
