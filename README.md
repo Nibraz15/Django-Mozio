@@ -1,11 +1,19 @@
-Provier-getall-create         : host-url/user/list/   
-Provider-create            	: host-url/user/create/ 
-Provider-login             : host-url/user/auth/login/
-Provider-update            : host-ul/user/update/<id>/
-Provider-delete            : host-ul/user/delete/<id>/
+host-url = http://ec2-18-222-74-145.us-east-2.compute.amazonaws.com:8000
 
-Polygon-Get-update-delete  : host-ul/polygon/<id>/
-Poligon-getall-create      : host-ul/polygon/list/
+Provier-getall-create         : http://ec2-18-222-74-145.us-east-2.compute.amazonaws.com:8000/user/list/   
+
+Provider-create            	: http://ec2-18-222-74-145.us-east-2.compute.amazonaws.com:8000/user/create/
+
+Provider-login             : http://ec2-18-222-74-145.us-east-2.compute.amazonaws.com:8000/user/auth/login/
+
+Provider-update            : http://ec2-18-222-74-145.us-east-2.compute.amazonaws.com:8000/user/update/<id>/
+  
+Provider-delete            : http://ec2-18-222-74-145.us-east-2.compute.amazonaws.com:8000/user/delete/<id>/
+  
+
+Polygon-Get-update-delete  : http://ec2-18-222-74-145.us-east-2.compute.amazonaws.com:8000/polygon/<id>/
+  
+Poligon-getall-create      : http://ec2-18-222-74-145.us-east-2.compute.amazonaws.com:8000/polygon/list/
 
 
 Creating an user can be done by anyone but updatin done by admin or user itself.
