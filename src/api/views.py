@@ -2,7 +2,7 @@ from rest_framework import viewsets
 from rest_framework import generics
 from api.models import User
 from api.serializers import UserSerializer
-from rest_framework.permissions import IsAdminUser
+from rest_framework.permissions import IsAdminUser , AllowAny
 from .permissions import IsOwnerOrReadOnly 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -44,6 +44,7 @@ class userDeleteView(generics.RetrieveDestroyAPIView):
 class userCreateView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+    permission_classes = [AllowAny]
     
     
     
